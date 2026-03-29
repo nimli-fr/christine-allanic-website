@@ -20,7 +20,7 @@ export default function MentionsLegales() {
               Christine Allanic &mdash; Formatrice ind&eacute;pendante (micro-entreprise)<br />
               SIRET : 33022175700051<br />
               Num&eacute;ro de d&eacute;claration d&rsquo;activit&eacute; (NDA) : 24450457945<br />
-              Email : <a href="mailto:callanic989@gmail.com" className="text-primary hover:underline">callanic989@gmail.com</a>
+              Email : <a href="mailto:formationsetco@gmail.com" className="text-primary hover:underline">formationsetco@gmail.com</a>
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function MentionsLegales() {
               destin&eacute;es exclusivement &agrave; Christine Allanic pour le traitement de
               votre demande. Conform&eacute;ment au RGPD, vous disposez d&rsquo;un droit
               d&rsquo;acc&egrave;s, de rectification et de suppression de vos donn&eacute;es.
-              Pour exercer ces droits, contactez : <a href="mailto:callanic989@gmail.com" className="text-primary hover:underline">callanic989@gmail.com</a>.
+              Pour exercer ces droits, contactez : <a href="mailto:formationsetco@gmail.com" className="text-primary hover:underline">formationsetco@gmail.com</a>.
             </p>
           </div>
         </div>

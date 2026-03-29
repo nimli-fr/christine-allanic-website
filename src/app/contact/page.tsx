@@ -52,8 +52,8 @@ export default function Contact() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-bold text-accent mb-2">Email</h3>
-                <a href="mailto:callanic989@gmail.com" className="text-primary hover:underline">
-                  callanic989@gmail.com
+                <a href="mailto:formationsetco@gmail.com" className="text-primary hover:underline">
+                  formationsetco@gmail.com
                 </a>
               </div>
               <div>
@@ -162,7 +162,7 @@ export default function Contact() {
                 )}
                 {status === "error" && (
                   <p className="text-red-600 text-sm font-medium">
-                    Une erreur est survenue. Veuillez r&eacute;essayer ou m&rsquo;&eacute;crire directement &agrave; callanic989@gmail.com.
+                    Une erreur est survenue. Veuillez r&eacute;essayer ou m&rsquo;&eacute;crire directement &agrave; formationsetco@gmail.com.
                   </p>
                 )}
               </form>
