@@ -7,13 +7,13 @@ export default function Home() {
       {/* Hero - full screen avec photo plage */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <Image
-          src="/images/christine-portrait.png"
-          alt="Christine Allanic"
+          src="/images/hero-plage.jpg"
+          alt="Nouveau d\u00e9part - Vue sur l'oc\u00e9an"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-accent/80 via-accent-light/55 to-accent/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-accent/75 via-accent-light/50 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative z-10">
           <div className="max-w-2xl">
