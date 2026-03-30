@@ -2,14 +2,16 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a2e;
-  --primary: #2a9d8f;
-  --primary-light: #5ec4b6;
-  --primary-dark: #1f7a6f;
-  --accent: #264653;
-  --accent-light: #3a6b7e;
-  --warm: #e9c46a;
-  --coral: #e76f51;
+  --foreground: #111827;
+  --primary: #06B6D4;
+  --primary-light: #22D3EE;
+  --primary-dark: #0891B2;
+  --accent: #0F172A;
+  --accent-light: #1E293B;
+  --warm: #CFFAFE;
+  --coral: #14B8A6;
+  --rose: #fce7f3;
+  --rose-dark: #ec4899;
 }
 
 @theme inline {
@@ -22,24 +24,32 @@
   --color-accent-light: var(--accent-light);
   --color-warm: var(--warm);
   --color-coral: var(--coral);
-  --font-sans: var(--font-geist-sans);
+  --color-rose: var(--rose);
+  --color-rose-dark: var(--rose-dark);
+  --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .watercolor-bg {
-  background: linear-gradient(135deg, rgba(42, 157, 143, 0.08) 0%, rgba(38, 70, 83, 0.05) 50%, rgba(42, 157, 143, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.04) 0%, rgba(207, 250, 254, 0.3) 50%, rgba(6, 182, 212, 0.06) 100%);
 }
 
 .watercolor-blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
+  filter: blur(80px);
+  opacity: 0.12;
   pointer-events: none;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
 }
