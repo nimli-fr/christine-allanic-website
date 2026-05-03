@@ -3,9 +3,25 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Bilan de Comp\u00e9tences | Formations And Co",
+  title: "Bilan de comp\u00e9tences \u2014 Certification Qualiopi | Formations And Co",
   description:
-    "R\u00e9alisez votre bilan de comp\u00e9tences avec Christine Allanic. 20h d\u2019accompagnement personnalis\u00e9, certifi\u00e9 Qualiopi, \u00e9ligible CPF.",
+    "R\u00e9alisez votre bilan de comp\u00e9tences avec Christine Allanic. 20h d\u2019accompagnement personnalis\u00e9, certifi\u00e9 Qualiopi, \u00e9ligible au financement CPF et OPCO. Reconversion, transition professionnelle, r\u00e9orientation.",
+  keywords: [
+    "bilan de comp\u00e9tences",
+    "accompagnement professionnel",
+    "reconversion",
+    "transition professionnelle",
+    "coaching carri\u00e8re",
+    "d\u00e9veloppement de carri\u00e8re",
+    "rebond professionnel",
+    "orientation",
+    "r\u00e9orientation",
+    "reconnaissance",
+    "accompagnement pour retrouver confiance",
+    "CPF",
+    "OPCO",
+    "Qualiopi",
+  ],
 };
 
 export default function BilanDeCompetences() {
@@ -19,15 +35,20 @@ export default function BilanDeCompetences() {
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            &Eacute;ligible CPF &mdash; Prise en charge &agrave; 100%
+            Certification Qualiopi &mdash; &Eacute;ligible CPF<sup>*</sup> &amp; OPCO
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-accent mb-6">
-            Bilan de Comp&eacute;tences
+            Bilan de comp&eacute;tences
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
             Faites le point sur votre parcours, identifiez vos forces et
             construisez un projet professionnel qui vous ressemble. Un
-            accompagnement bienveillant et structur&eacute; pour avancer avec confiance.
+            accompagnement bienveillant et structur&eacute; pour avancer avec
+            confiance dans votre reconversion, transition professionnelle ou
+            r&eacute;orientation.
+          </p>
+          <p className="text-xs text-gray-500 max-w-2xl leading-relaxed mt-4">
+            <sup>*</sup> Prise en charge &agrave; 100&nbsp;% par le CPF r&eacute;serv&eacute;e aux personnes inscrites &agrave; France Travail. Financement OPCO ou autofinancement &eacute;galement possibles.
           </p>
         </div>
       </section>
@@ -107,8 +128,8 @@ export default function BilanDeCompetences() {
             {[
               { label: "Dur\u00e9e", value: "20 heures r\u00e9parties sur plusieurs semaines" },
               { label: "Modalit\u00e9s", value: "Pr\u00e9sentiel ou distanciel (visio)" },
-              { label: "Financement", value: "CPF (prise en charge \u00e0 100%), plan de d\u00e9veloppement des comp\u00e9tences, autofinancement" },
-              { label: "Public", value: "Salari\u00e9es, demandeuses d\u2019emploi, ind\u00e9pendantes" },
+              { label: "Financement", value: "\u00c9ligible CPF*, OPCO, plan de d\u00e9veloppement des comp\u00e9tences, autofinancement" },
+              { label: "Public", value: "Salari\u00e9s, demandeurs d\u2019emploi, ind\u00e9pendants" },
               { label: "Pr\u00e9requis", value: "Aucun pr\u00e9requis n\u00e9cessaire" },
               { label: "Accessibilit\u00e9", value: "Accessible aux personnes en situation de handicap (PSH)" },
             ].map((info) => (
@@ -119,7 +140,11 @@ export default function BilanDeCompetences() {
             ))}
           </div>
 
-          <div className="mt-8 text-center">
+          <p className="text-xs text-gray-500 mt-6">
+            <sup>*</sup> Prise en charge &agrave; 100&nbsp;% par le CPF r&eacute;serv&eacute;e aux personnes inscrites &agrave; France Travail.
+          </p>
+
+          <div className="mt-6 text-center">
             <a
               href="https://www.moncompteformation.gouv.fr"
               target="_blank"
@@ -146,7 +171,7 @@ export default function BilanDeCompetences() {
             className="mx-auto mb-8 rounded-lg"
           />
           <h2 className="text-2xl md:text-3xl font-bold text-accent mb-4">
-            Int&eacute;ress&eacute;e par un bilan de comp&eacute;tences ?
+            Int&eacute;ress&eacute; par un bilan de comp&eacute;tences ?
           </h2>
           <p className="text-gray-500 mb-8">
             B&eacute;n&eacute;ficiez d&rsquo;un entretien sans engagement pour &eacute;changer sur vos besoins.

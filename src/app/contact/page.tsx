@@ -149,6 +149,8 @@ export default function Contact() {
                         <option value="bilan">Bilan de Comp&eacute;tences</option>
                         <option value="sst">Formation SST initiale</option>
                         <option value="mac-sst">Recyclage MAC SST</option>
+                        <option value="bien-etre">Formation Modelages Bien-&ecirc;tre</option>
+                        <option value="service-salle">Formation Service en salle</option>
                         <option value="autre">Autre demande</option>
                       </select>
                     </div>

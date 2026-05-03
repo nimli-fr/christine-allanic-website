@@ -19,7 +19,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-white/20">
               <span className="w-2 h-2 bg-primary-light rounded-full animate-pulse" />
-              Certifi&eacute;e Qualiopi
+              Bilan de comp&eacute;tences &mdash; Certification Qualiopi
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
@@ -27,25 +27,28 @@ export default function Home() {
               <span className="text-primary-light">opportunit&eacute;&nbsp;?</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-white/80 mb-4 leading-relaxed max-w-xl">
               Un accompagnement profond et sur-mesure pour transformer votre
               parcours en un nouveau projet de vie.{" "}
-              <strong className="text-white">20&nbsp;heures pour vous r&eacute;v&eacute;ler</strong>, financ&eacute;es
-              &agrave; 100% par votre CPF.
+              <strong className="text-white">20&nbsp;heures pour vous r&eacute;v&eacute;ler</strong>, &eacute;ligible au financement CPF
+              <sup>*</sup>.
+            </p>
+            <p className="text-xs text-white/60 mb-10 max-w-xl">
+              <sup>*</sup> Prise en charge &agrave; 100&nbsp;% pour les personnes inscrites &agrave; France Travail. Financement OPCO &eacute;galement possible pour les salari&eacute;s.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact"
+                href="/bilan-de-competences"
                 className="bg-primary text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-primary-dark transition-colors text-center shadow-lg"
               >
-                Demander un entretien d&eacute;couverte
+                D&eacute;couvrir le Bilan de comp&eacute;tences
               </Link>
               <Link
-                href="/bilan-de-competences"
+                href="/contact"
                 className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-7 py-3.5 rounded-xl font-semibold hover:bg-white/20 transition-colors text-center"
               >
-                D&eacute;couvrir le Bilan
+                Demander un entretien d&eacute;couverte
               </Link>
             </div>
 
@@ -53,7 +56,7 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-6 mt-14 max-w-md">
               {[
                 { number: "20h", label: "d\u2019accompagnement" },
-                { number: "100%", label: "pris en charge CPF" },
+                { number: "CPF", label: "& OPCO \u00e9ligibles" },
                 { number: "1", label: "seul objectif : vous" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
@@ -176,18 +179,19 @@ export default function Home() {
             Pour chaque &eacute;tape de votre parcours professionnel.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Bilan de Comp&eacute;tences */}
-            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-8 border border-gray-100">
-              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-7 border border-gray-100 flex flex-col">
+              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-accent mb-3">Bilan de Comp&eacute;tences</h3>
-              <p className="text-gray-500 mb-6 leading-relaxed text-sm">
-                Transformez vos interrogations en un projet concret, financ&eacute;
-                &agrave; 100% par votre CPF. 20h d&rsquo;accompagnement personnalis&eacute;.
+              <h3 className="text-lg font-bold text-accent mb-3">Bilan de Comp&eacute;tences</h3>
+              <p className="text-gray-500 mb-6 leading-relaxed text-sm flex-1">
+                20h d&rsquo;accompagnement personnalis&eacute; pour transformer vos
+                interrogations en un projet concret. &Eacute;ligible CPF
+                <sup>*</sup> et OPCO.
               </p>
               <Link
                 href="/bilan-de-competences"
@@ -200,20 +204,20 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Formation SST initiale */}
-            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-8 border border-gray-100">
-              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            {/* Formation SST */}
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-7 border border-gray-100 flex flex-col">
+              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-accent mb-3">Formation SST initiale</h3>
-              <p className="text-gray-500 mb-6 leading-relaxed text-sm">
-                14h pour ma&icirc;triser les gestes de premiers secours et devenir
-                acteur de la pr&eacute;vention. Certificat INRS.
+              <h3 className="text-lg font-bold text-accent mb-3">Formation SST</h3>
+              <p className="text-gray-500 mb-6 leading-relaxed text-sm flex-1">
+                Initiale (14h) ou recyclage MAC SST (7h) pour ma&icirc;triser les
+                gestes de premiers secours. Certificat INRS, financement OPCO.
               </p>
               <Link
-                href="/formation-sst"
+                href="/formation/sst"
                 className="inline-flex items-center gap-2 text-coral font-semibold text-sm hover:gap-3 transition-all"
               >
                 D&eacute;couvrir
@@ -223,20 +227,43 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Recyclage MAC SST */}
-            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-8 border border-gray-100">
-              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <svg className="w-7 h-7 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            {/* Formation Bien-&ecirc;tre */}
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-7 border border-gray-100 flex flex-col">
+              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-accent mb-3">Recyclage MAC SST</h3>
-              <p className="text-gray-500 mb-6 leading-relaxed text-sm">
-                7h pour maintenir et actualiser vos comp&eacute;tences SST.
-                Obligatoire tous les 24 mois.
+              <h3 className="text-lg font-bold text-accent mb-3">Modelages Bien-&ecirc;tre</h3>
+              <p className="text-gray-500 mb-6 leading-relaxed text-sm flex-1">
+                Formations massages bien-&ecirc;tre sur-mesure pour
+                professionnels. Certification CIDESCO, financement OPCO possible.
               </p>
               <Link
-                href="/formation-sst"
+                href="/formation/bien-etre"
+                className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+              >
+                D&eacute;couvrir
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Service en salle */}
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all p-7 border border-gray-100 flex flex-col">
+              <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg className="w-7 h-7 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M3 14h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-accent mb-3">Service en salle</h3>
+              <p className="text-gray-500 mb-6 leading-relaxed text-sm flex-1">
+                Formation flash 2 jours pour serveurs occasionnels.
+                Op&eacute;rationnels imm&eacute;diatement, dans votre restaurant. OPCO.
+              </p>
+              <Link
+                href="/formation/service-salle"
                 className="inline-flex items-center gap-2 text-coral font-semibold text-sm hover:gap-3 transition-all"
               >
                 D&eacute;couvrir
@@ -246,6 +273,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          <p className="text-xs text-gray-500 mt-8 text-center max-w-2xl mx-auto">
+            <sup>*</sup> Bilan de comp&eacute;tences pris en charge &agrave; 100&nbsp;% par le CPF pour les personnes inscrites &agrave; France Travail.
+          </p>
         </div>
       </section>
 
@@ -255,7 +286,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-sm font-mono text-primary font-semibold tracking-widest uppercase mb-4">
-                Le CPF &agrave; votre service
+                CPF &amp; OPCO &agrave; votre service
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6 leading-tight">
                 Investissez sur vous
@@ -269,10 +300,14 @@ export default function Home() {
                 </p>
                 <p>
                   <strong className="text-accent">La bonne nouvelle ?</strong>{" "}
-                  Ce parcours est pris en charge par votre Compte Personnel de Formation (CPF).
+                  Ce parcours est <strong>&eacute;ligible au financement CPF</strong> (Compte Personnel de Formation)
+                  et peut &eacute;galement &ecirc;tre pris en charge par votre <strong>OPCO</strong>.
                   Je vous accompagne personnellement dans les d&eacute;marches
                   pour que votre seule pr&eacute;occupation soit votre
                   &eacute;panouissement.
+                </p>
+                <p className="text-xs text-gray-500">
+                  <sup>*</sup> Prise en charge &agrave; 100&nbsp;% par le CPF r&eacute;serv&eacute;e aux personnes inscrites &agrave; France Travail.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">

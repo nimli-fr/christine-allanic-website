@@ -7,7 +7,7 @@ import { useState } from "react";
 const navigation = [
   { name: "Accueil", href: "/" },
   { name: "Bilan de Comp\u00e9tences", href: "/bilan-de-competences" },
-  { name: "Formations SST", href: "/formation-sst" },
+  { name: "Formation", href: "/formation" },
   { name: "\u00c0 propos", href: "/a-propos" },
   { name: "Contact", href: "/contact" },
 ];
@@ -20,9 +20,14 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center shadow-sm">
-              <span className="text-white font-bold text-lg">F</span>
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Formations And Co"
+              width={44}
+              height={44}
+              priority
+              className="w-11 h-11 object-contain"
+            />
             <div className="leading-tight">
               <span className="font-bold text-accent text-lg tracking-tight">Formations</span>
               <span className="text-primary font-semibold text-lg"> And Co</span>

@@ -15,10 +15,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Formations And Co | Christine Allanic - Organisme de formation certifi\u00e9 Qualiopi",
+  title: "Formations And Co | Bilan de comp\u00e9tences \u2014 Christine Allanic, certification Qualiopi",
   description:
-    "Formations And Co - Organisme de formation certifi\u00e9 Qualiopi. Bilans de Comp\u00e9tences et Formations SST (Sant\u00e9 et S\u00e9curit\u00e9 au Travail). Christine Allanic, formatrice ind\u00e9pendante.",
-  keywords: ["formation", "qualiopi", "bilan de comp\u00e9tences", "SST", "Christine Allanic", "Formations And Co"],
+    "Bilan de comp\u00e9tences certifi\u00e9 Qualiopi avec Christine Allanic. Accompagnement professionnel pour reconversion, transition professionnelle, r\u00e9orientation et rebond professionnel. Formations SST, Bien-\u00eatre et Service en salle. \u00c9ligible CPF & OPCO.",
+  keywords: [
+    "bilan de comp\u00e9tences",
+    "accompagnement professionnel",
+    "reconversion",
+    "reconnaissance",
+    "transition professionnelle",
+    "coaching carri\u00e8re",
+    "d\u00e9veloppement de carri\u00e8re",
+    "accompagnement pour retrouver confiance",
+    "rebond professionnel",
+    "orientation",
+    "r\u00e9orientation",
+    "formation",
+    "Qualiopi",
+    "CPF",
+    "OPCO",
+    "SST",
+    "Christine Allanic",
+    "Formations And Co",
+  ],
 };
 
 export default function RootLayout({

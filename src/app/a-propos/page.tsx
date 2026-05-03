@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "\u00c0 propos | Formations And Co - Christine Allanic",
   description:
-    "D\u00e9couvrez le parcours de Christine Allanic, formatrice ind\u00e9pendante certifi\u00e9e Qualiopi, sp\u00e9cialis\u00e9e en bilan de comp\u00e9tences et formations SST.",
+    "D\u00e9couvrez le parcours de Christine Allanic, formatrice ind\u00e9pendante certifi\u00e9e Qualiopi, sp\u00e9cialis\u00e9e en bilan de comp\u00e9tences, accompagnement professionnel, reconversion et formations (SST, bien-\u00eatre, service en salle).",
 };
 
 export default function APropos() {

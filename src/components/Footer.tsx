@@ -9,14 +9,20 @@ export default function Footer() {
           {/* Logo & Qualiopi */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">F</span>
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center p-1">
+                <Image
+                  src="/images/logo.png"
+                  alt="Formations And Co"
+                  width={36}
+                  height={36}
+                  className="w-7 h-7 object-contain"
+                />
               </div>
               <span className="font-bold text-lg">Formations And Co</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-4">
               Organisme de formation certifi&eacute; Qualiopi.<br />
-              Bilans de Comp&eacute;tences &amp; Formations SST.
+              Bilans de Comp&eacute;tences &amp; Formations.
             </p>
             <Image
               src="/images/qualiopi.png"
@@ -32,8 +38,9 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li><Link href="/bilan-de-competences" className="hover:text-primary-light transition-colors">Bilan de Comp&eacute;tences</Link></li>
-              <li><Link href="/formation-sst" className="hover:text-primary-light transition-colors">Formation SST initiale</Link></li>
-              <li><Link href="/formation-sst" className="hover:text-primary-light transition-colors">Recyclage MAC SST</Link></li>
+              <li><Link href="/formation/sst" className="hover:text-primary-light transition-colors">Formation SST</Link></li>
+              <li><Link href="/formation/bien-etre" className="hover:text-primary-light transition-colors">Formation Bien-&ecirc;tre</Link></li>
+              <li><Link href="/formation/service-salle" className="hover:text-primary-light transition-colors">Formation Service en salle</Link></li>
               <li><Link href="/a-propos" className="hover:text-primary-light transition-colors">&Agrave; propos</Link></li>
               <li><Link href="/contact" className="hover:text-primary-light transition-colors">Contact</Link></li>
             </ul>

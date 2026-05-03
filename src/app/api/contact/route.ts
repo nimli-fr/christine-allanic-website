@@ -7,6 +7,8 @@ const SUJETS: Record<string, string> = {
   bilan: "Bilan de Comp\u00e9tences",
   sst: "Formation SST initiale",
   "mac-sst": "Recyclage MAC SST",
+  "bien-etre": "Formation Modelages Bien-\u00eatre",
+  "service-salle": "Formation Service en salle",
   autre: "Autre demande",
 };
 

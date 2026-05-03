@@ -2,9 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Formations SST | Formations And Co",
+  title: "Formation SST \u2014 Sauveteur Secouriste du Travail | Formations And Co",
   description:
-    "Formation Sauveteur Secouriste du Travail (SST) : initiale 14h et recyclage MAC SST 7h. Certificat INRS. Organisme certifi\u00e9 Qualiopi.",
+    "Formation Sauveteur Secouriste du Travail (SST) : initiale 14h et recyclage MAC SST 7h. Certificat INRS, organisme certifi\u00e9 Qualiopi, financement OPCO possible.",
+  keywords: [
+    "formation SST",
+    "sauveteur secouriste du travail",
+    "premiers secours",
+    "MAC SST",
+    "INRS",
+    "formation",
+    "Qualiopi",
+    "OPCO",
+  ],
 };
 
 export default function FormationSST() {
@@ -14,11 +24,19 @@ export default function FormationSST() {
       <section className="watercolor-bg py-16 md:py-24 relative overflow-hidden">
         <div className="watercolor-blob w-80 h-80 bg-coral top-[-60px] right-[-60px]" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="mb-6">
+            <Link href="/formation" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Toutes les formations
+            </Link>
+          </div>
           <div className="inline-flex items-center gap-2 bg-coral/10 text-coral px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            Certificat INRS
+            Certificat INRS &mdash; Certification Qualiopi
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-accent mb-6">
-            Formations SST
+            Formation SST
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
             Sauveteur Secouriste du Travail &mdash; Apprenez les gestes de premiers
@@ -156,6 +174,7 @@ export default function FormationSST() {
               { label: "Mat\u00e9riel", value: "Mannequins, d\u00e9fibrillateur de formation, plan d\u2019intervention" },
               { label: "Certification", value: "Certificat SST d\u00e9livr\u00e9 par l\u2019INRS (validit\u00e9 24 mois)" },
               { label: "Lieu", value: "Formation possible dans vos locaux (intra-entreprise)" },
+              { label: "Financement", value: "OPCO, plan de d\u00e9veloppement des comp\u00e9tences, autofinancement" },
               { label: "Accessibilit\u00e9", value: "Accessible aux personnes en situation de handicap" },
             ].map((info) => (
               <div key={info.label} className="bg-white rounded-xl p-5 shadow-sm">
