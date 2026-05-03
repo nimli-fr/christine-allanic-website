@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     const sujetLabel = SUJETS[sujet] || sujet;
 
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: "Formations And Co <contact@formations-and-co.com>",
       to: "formationsetco@gmail.com",
       replyTo: email,
@@ -65,7 +65,15 @@ export async function POST(request: Request) {
       `,
     });
 
-    return NextResponse.json({ success: true });
+    if (result.error) {
+      console.error("Resend error:", result.error);
+      return NextResponse.json(
+        { error: result.error.message ?? "Erreur lors de l'envoi" },
+        { status: 502 }
+      );
+    }
+
+    return NextResponse.json({ success: true, id: result.data?.id });
   } catch (error) {
     console.error("Erreur envoi email:", error);
     return NextResponse.json(
