@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Formation Modelages Bien-\u00eatre \u2014 CIDESCO & Qualiopi | Formations And Co",
@@ -67,6 +68,38 @@ export default function FormationBienEtre() {
         </div>
       </section>
 
+      {/* Photo + accroche */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <Image
+                src="/images/formation-massage.png"
+                alt="Christine Allanic enseignant les techniques de modelages bien-&ecirc;tre"
+                width={720}
+                height={800}
+                className="rounded-3xl shadow-xl object-cover w-full"
+              />
+            </div>
+            <div>
+              <p className="text-sm font-mono text-primary font-semibold tracking-widest uppercase mb-4">
+                Une expertise reconnue mondialement
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-accent mb-6 leading-tight">
+                Devenez l&rsquo;expert de demain
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                Forte de ma certification <strong>CIDESCO</strong> &mdash; r&eacute;f&eacute;rence
+                mondiale de l&rsquo;excellence en esth&eacute;tique (standard d&rsquo;excellence international) &mdash;
+                et de mon accr&eacute;ditation <strong>Qualiopi</strong>, je vous propose des formations
+                d&rsquo;une journ&eacute;e directement au sein de votre &eacute;tablissement, en petit comit&eacute;
+                (4 &agrave; 8 personnes) pour garantir une pratique fluide en bin&ocirc;mes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pourquoi */}
       <section className="py-16">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
@@ -74,14 +107,8 @@ export default function FormationBienEtre() {
             Pourquoi choisir mes formations
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-accent mb-10 text-center">
-            Une expertise reconnue mondialement
+            Quatre engagements pour votre mont&eacute;e en comp&eacute;tences
           </h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Forte de ma certification <strong>CIDESCO</strong> &mdash; r&eacute;f&eacute;rence
-            mondiale de l&rsquo;excellence en esth&eacute;tique (standard d&rsquo;excellence international) &mdash;
-            et de mon accr&eacute;ditation <strong>Qualiopi</strong>, je vous propose des formations
-            d&rsquo;une journ&eacute;e directement au sein de votre &eacute;tablissement.
-          </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
