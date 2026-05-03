@@ -52,7 +52,7 @@ export default function FormationServiceSalle() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/images/service-salle.jpg"
+                src="/images/service-salle-2.png"
                 alt="Formation service en salle de restaurant"
                 width={720}
                 height={960}
@@ -144,7 +144,7 @@ export default function FormationServiceSalle() {
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1">
               <Image
-                src="/images/service-salle-2.png"
+                src="/images/service-salle.jpg"
                 alt="Christine Allanic, formatrice service en salle"
                 width={500}
                 height={680}
