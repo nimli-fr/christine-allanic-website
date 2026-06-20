@@ -31,7 +31,7 @@ export default function APropos() {
           <div className="grid md:grid-cols-3 gap-10 items-start">
             <div className="md:col-span-1">
               <Image
-                src="/images/christine-bureau.png"
+                src="/images/christine-bureau.jpg"
                 alt="Christine Allanic"
                 width={400}
                 height={500}

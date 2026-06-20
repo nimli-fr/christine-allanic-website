@@ -52,7 +52,7 @@ export default function FormationServiceSalle() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/images/service-salle-2.png"
+                src="/images/service-salle-2.jpg"
                 alt="Formation service en salle de restaurant"
                 width={720}
                 height={960}

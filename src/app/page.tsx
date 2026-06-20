@@ -100,7 +100,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <Image
-                src="/images/christine-bureau.png"
+                src="/images/christine-bureau.jpg"
                 alt="Christine Allanic en consultation"
                 width={500}
                 height={625}
@@ -329,7 +329,7 @@ export default function Home() {
             </div>
 
             <Image
-              src="/images/consultation.png"
+              src="/images/consultation.jpg"
               alt="S&eacute;ance d'accompagnement"
               width={500}
               height={625}

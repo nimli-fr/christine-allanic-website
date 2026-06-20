@@ -74,7 +74,7 @@ export default function FormationBienEtre() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/images/formation-massage.png"
+                src="/images/formation-massage.jpg"
                 alt="Christine Allanic enseignant les techniques de modelages bien-&ecirc;tre"
                 width={720}
                 height={800}
