@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nos formations \u2014 SST, Bien-\u00eatre, Service en salle | Formations And Co",
+  title: "Nos formations \u2014 SST, Bien-\u00eatre, Service en salle, PSE | Formations And Co",
   description:
-    "D\u00e9couvrez nos formations certifi\u00e9es Qualiopi : SST (Sauveteur Secouriste du Travail), Modelages Bien-\u00eatre (CIDESCO) et Service en salle de restaurant. Financement OPCO possible.",
+    "D\u00e9couvrez nos formations et accompagnements certifi\u00e9s Qualiopi : SST (Sauveteur Secouriste du Travail), Modelages Bien-\u00eatre (CIDESCO), Service en salle de restaurant et accompagnement PSE. Financement OPCO possible.",
   keywords: [
     "formation",
     "formation SST",
     "formation bien-\u00eatre",
     "formation service en salle",
+    "accompagnement PSE",
     "Qualiopi",
     "OPCO",
     "Christine Allanic",
@@ -44,6 +45,15 @@ const formations = [
     color: "coral",
     icon: "M3 10h18M3 14h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z",
   },
+  {
+    slug: "pse",
+    title: "Accompagnement PSE",
+    subtitle: "Plan de sauvegarde de l\u2019emploi",
+    desc: "Accompagnement personnalis\u00e9 et structur\u00e9 des salari\u00e9s concern\u00e9s par un PSE : reclassement interne, reconversion, recherche externe ou orientation formation. Collaboration avec les services RH dans le respect du cadre l\u00e9gal.",
+    bullets: ["Accompagnement individuel", "Ateliers collectifs adapt\u00e9s", "Collaboration avec les RH", "Bilan de comp\u00e9tences certifi\u00e9"],
+    color: "primary",
+    icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+  },
 ] as const;
 
 export default function FormationHub() {
@@ -70,7 +80,7 @@ export default function FormationHub() {
       {/* Cards */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {formations.map((f) => {
               const accent = f.color === "coral" ? "text-coral" : "text-primary";
               const bg = f.color === "coral" ? "bg-coral" : "bg-primary";
