@@ -143,47 +143,28 @@ export default function BilanDeCompetences() {
           <p className="text-xs text-gray-500 mt-6">
             <sup>*</sup> Prise en charge &agrave; 100&nbsp;% par le CPF r&eacute;serv&eacute;e aux personnes inscrites &agrave; France Travail.
           </p>
-
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <a
-              href="https://www.moncompteformation.gouv.fr"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Acc&eacute;der &agrave; Mon Compte Formation"
-            >
-              <Image
-                src="/images/moncompteformation-badge.png"
-                alt="Cette offre de formation est &eacute;ligible &agrave; Mon Compte Formation"
-                width={160}
-                height={157}
-                className="w-32 md:w-40 h-auto"
-              />
-            </a>
-            <a
-              href="https://www.moncompteformation.gouv.fr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-            >
-              Acc&eacute;der &agrave; Mon Compte Formation (CPF)
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-16 watercolor-bg">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <Image
-            src="/images/qualiopi.png"
-            alt="Certification Qualiopi"
-            width={180}
-            height={108}
-            className="mx-auto mb-8 rounded-lg"
-          />
+          <div className="flex items-center justify-center gap-6 mb-8">
+            <Image
+              src="/images/qualiopi.png"
+              alt="Certification Qualiopi"
+              width={180}
+              height={108}
+              className="rounded-lg h-20 md:h-24 w-auto"
+            />
+            <Image
+              src="/images/moncompteformation-badge.png"
+              alt="Cette offre de formation est &eacute;ligible &agrave; Mon Compte Formation"
+              width={160}
+              height={157}
+              className="h-20 md:h-24 w-auto"
+            />
+          </div>
           <h2 className="text-2xl md:text-3xl font-bold text-accent mb-4">
             Int&eacute;ress&eacute; par un bilan de comp&eacute;tences ?
           </h2>
