@@ -144,7 +144,21 @@ export default function BilanDeCompetences() {
             <sup>*</sup> Prise en charge &agrave; 100&nbsp;% par le CPF r&eacute;serv&eacute;e aux personnes inscrites &agrave; France Travail.
           </p>
 
-          <div className="mt-6 text-center">
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <a
+              href="https://www.moncompteformation.gouv.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Acc&eacute;der &agrave; Mon Compte Formation"
+            >
+              <Image
+                src="/images/moncompteformation-badge.png"
+                alt="Cette offre de formation est &eacute;ligible &agrave; Mon Compte Formation"
+                width={160}
+                height={157}
+                className="w-32 md:w-40 h-auto"
+              />
+            </a>
             <a
               href="https://www.moncompteformation.gouv.fr"
               target="_blank"
