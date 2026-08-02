@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Home() {
   return (
@@ -380,45 +381,24 @@ export default function Home() {
             Ce qu&rsquo;en disent mes b&eacute;n&eacute;ficiaires
           </h2>
 
-          <div className="grid gap-8 max-w-3xl mx-auto">
-            {[
+          <TestimonialsCarousel
+            testimonials={[
               {
                 quote:
-                  "J’ai été agréablement surprise par la qualité de ce bilan de compétences, qui s’est déroulé tout en douceur. Christine s’est montrée extrêmement à l’écoute et disponible tout au long de mon parcours. Le résultat va bien au-delà de mes attentes initiales. Je suis pleinement satisfaite de cette expérience et je vous recommande vivement son accompagnement !",
+                  "J’ai été agréablement surprise par la qualité de ce bilan de compétences, qui s’est déroulé tout en douceur. Christine s’est montrée extrêmement à l’écoute et disponible tout au long de mon parcours. Le résultat va bien au-delà de mes attentes initiales. Je suis pleinement satisfaite de cette expérience et je vous recommande vivement son accompagnement !",
                 author: "Sandra F.",
                 context: "Bilan de compétences",
                 date: "Juin 2026",
               },
-            ].map((testimonial) => (
-              <article
-                key={testimonial.author}
-                className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100"
-              >
-                <svg
-                  className="w-10 h-10 text-primary/20 mb-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
-                </svg>
-                <blockquote className="text-gray-700 leading-relaxed text-lg italic mb-6">
-                  &laquo;&nbsp;{testimonial.quote}&nbsp;&raquo;
-                </blockquote>
-                <footer className="flex items-center gap-4 pt-4 border-t border-gray-100">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold flex-shrink-0">
-                    {testimonial.author.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-accent">{testimonial.author}</p>
-                    <p className="text-sm text-gray-500">
-                      {testimonial.context} &middot; {testimonial.date}
-                    </p>
-                  </div>
-                </footer>
-              </article>
-            ))}
-          </div>
+              {
+                quote:
+                  "Grâce à l’accompagnement de Christine, cela m’a aidé à franchir un cap pour dépasser mes appréhensions, surmonter mes peurs liées à ma transition professionnelle et renforcer ma détermination à réussir ma reconversion. Son soutien m'a permis de confirmer ma conviction de réussir et de démarrer concrètement mon projet. L'ajustement des points techniques et administratifs, ainsi que la création d'un plan de secours, m'ont donné toutes les clés pour me lancer sereinement !",
+                author: "Alexis M.",
+                context: "Bénéficiaire du bilan de compétences",
+                date: "Juillet 2026",
+              },
+            ]}
+          />
         </div>
       </section>
 

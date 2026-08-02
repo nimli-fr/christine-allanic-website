@@ -78,7 +78,8 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/50">
-            &copy; {new Date().getFullYear()} Formations And Co &mdash; Christine Allanic. Tous droits r&eacute;serv&eacute;s.
+            &copy; {new Date().getFullYear()}{" "}
+            Formations And Co &mdash; Christine Allanic. Tous droits r&eacute;serv&eacute;s.
           </p>
           <div className="flex gap-4 text-xs text-white/50">
             <Link href="/mentions-legales" className="hover:text-white/80 transition-colors">Mentions l&eacute;gales</Link>

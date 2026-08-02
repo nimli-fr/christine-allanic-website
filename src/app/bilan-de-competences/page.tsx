@@ -66,8 +66,8 @@ export default function BilanDeCompetences() {
             afin de d&eacute;finir un projet professionnel ou de formation.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Il se d&eacute;roule en <strong>3 phases</strong> sur une dur&eacute;e de <strong>20 heures</strong> r&eacute;parties
-            sur <strong>plusieurs semaines</strong>.
+            Il se d&eacute;roule en <strong>3 phases</strong> sur une dur&eacute;e de <strong>20 heures</strong>{" "}
+            r&eacute;parties sur <strong>plusieurs semaines</strong>.
           </p>
         </div>
       </section>
